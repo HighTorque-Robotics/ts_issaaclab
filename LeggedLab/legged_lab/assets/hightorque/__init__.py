@@ -1,0 +1,1 @@
+from legged_lab.assets.hightorque.hightorque import *

@@ -1,0 +1,8 @@
+<mujoco>
+    <asset>
+      <hfield file="./height_field.bin" name="customTerrain" ncol="100" nrow="100" size="50 50 1 0.1"/>
+    </asset>
+    <worldbody>
+      <geom hfield="customTerrain" pos="0 0 0" type="hfield"/>
+    </worldbody>
+</mujoco>

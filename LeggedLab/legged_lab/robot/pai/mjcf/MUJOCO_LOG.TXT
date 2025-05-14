@@ -1,0 +1,9 @@
+Thu Oct 17 14:20:07 2024
+WARNING: Insufficient arena memory for the number of constraints generated. Increase arena memory allocation above 14M bytes. Time = 0.0000.
+
+Thu Oct 17 14:20:17 2024
+WARNING: Insufficient arena memory for the number of constraints generated. Increase arena memory allocation above 14M bytes. Time = 0.0000.
+
+Thu Oct 17 14:54:17 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 1. The simulation is unstable. Time = 5.9620.
+
