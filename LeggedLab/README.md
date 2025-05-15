@@ -59,12 +59,12 @@ pip install -e .
 - Verify that the extension is correctly installed by running the following command:
 
 ```bash
-python python legged_lab/scripts/train.py --task=pai_flat --headless --logger=tensorboard --num_envs=4096 
+python legged_lab/scripts/train.py --task=pai_flat --headless --logger=tensorboard --num_envs=4096 
 ```
 
 - Train
 ```bash
-python python legged_lab/scripts/train.py --task=pai_flat --headless --logger=tensorboard --num_envs=4096 
+python legged_lab/scripts/train.py --task=pai_flat --headless --logger=tensorboard --num_envs=4096 
 ```
 
 - Play
