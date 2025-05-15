@@ -13,11 +13,6 @@
 
 This repository provides a direct workflow for training a legged robot using IsaacLab. It provides high transparency and low refactoring difficulty of the direct environment, and uses isaaclab components to simplify the workflow.
 
-It has all the necessary conditions for sim-to-real and has been tested on real unitree g1 and h1 robots, [video available](https://www.bilibili.com/video/BV1tNRgYQEnr/).
-Deploy Code: https://github.com/Hellod035/unitree_deploy_py
-
-**Maintainer**: Wandong Sun              
-**Contact**: 24b908020@stu.hit.edu.cn    
 
 **Key Features:**
 
@@ -29,10 +24,10 @@ If you use Legged Lab in your research, please cite it as follows:
 
 ```bibtex
 @software{LeggedLab,
-  author = {Wandong, Sun},
+  author = {Hightorque},
   license = {MIT},
   title = {Legged Lab: Direct IsaacLab Workflow for Legged Robots},
-  url = {https://github.com/Hellod035/LeggedLab},
+  url = {https://github.com/HighTorque-Robotics/ts_issaaclab/tree/master/LeggedLab},
   version = {0.0.1},
   year = {2025}
 }
@@ -48,29 +43,24 @@ LeggedLab is built against the latest version of Isaacsim/IsaacLab. It is recomm
 
 ```bash
 # Option 1: HTTPS
-git clone https://github.com/Hellod035/LeggedLab
+git clone https://github.com/HighTorque-Robotics/ts_issaaclab.git 
 
 # Option 2: SSH
-git clone git@github.com:Hellod035/LeggedLab.git
+git clone git@github.com:HighTorque-Robotics/ts_issaaclab.git 
 ```
 
 - Using a python interpreter that has Isaac Lab installed, install the library
 
 ```bash
-cd LeggedLab
+cd ts/issaacliab/LeggedLab
 pip install -e .
 ```
 
 - Verify that the extension is correctly installed by running the following command:
 
 ```bash
-python legged_lab/scripts/train.py --task=h1_flat --headless --logger=tensorboard --num_envs=64
+python python legged_lab/scripts/train.py --task=pai_flat --headless --logger=tensorboard --num_envs=4096 
 ```
-
-
-## Use Your Own Robot
-
-Assets must be converted into USD format to be compatible with Legged Lab/IsaacLab. [Convert Tutorial](https://isaac-sim.github.io/IsaacLab/main/source/how-to/import_new_asset.html).
 
 
 ## Multi-GPU and Multi-Node Training
@@ -98,7 +88,8 @@ In some VsCode versions, the indexing of part of the extensions is missing. In t
 ```
 
 # References and Thanks
-This project repository builds upon the shoulders of giants. 
+This project repository builds upon the shoulders of giants.
+* [LeggedLab](https://github.com/Hellod035/LeggedLab) 
 * [IsaacLab](https://github.com/isaac-sim/IsaacLab)   The various reusable practical components in IsaacLab greatly simplify the complexity of LeggedLab.
 * [legged_gym](https://github.com/leggedrobotics/legged_gym)   We borrowed the code organization and environment definition logic of legged_gym and simplified it as much as possible.
 * [Protomotions](https://github.com/NVlabs/ProtoMotions)   The motivation for building this repository comes from protomotions. For the first time, we realized that we could create our own environment using only IsaacLab components without inheriting 'DirectRLEnv' or 'ManagerBasedRLEnv'.
