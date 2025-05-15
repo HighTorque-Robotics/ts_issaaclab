@@ -62,6 +62,21 @@ pip install -e .
 python python legged_lab/scripts/train.py --task=pai_flat --headless --logger=tensorboard --num_envs=4096 
 ```
 
+- Train
+```bash
+python python legged_lab/scripts/train.py --task=pai_flat --headless --logger=tensorboard --num_envs=4096 
+```
+
+- Play
+```bash
+python legged_lab/scripts/play.py --task=pai_flat --num_envs=50
+```
+
+- sim2sim
+```bash
+python legged_lab/scripts/sim2sim.py
+```
+
 
 ## Multi-GPU and Multi-Node Training
 
@@ -89,7 +104,7 @@ In some VsCode versions, the indexing of part of the extensions is missing. In t
 
 # References and Thanks
 This project repository builds upon the shoulders of giants.
-* [LeggedLab](https://github.com/Hellod035/LeggedLab) 
+* [LeggedLab](https://github.com/Hellod035/LeggedLab) Direct IsaacLab Workflow for Legged Robots 
 * [IsaacLab](https://github.com/isaac-sim/IsaacLab)   The various reusable practical components in IsaacLab greatly simplify the complexity of LeggedLab.
 * [legged_gym](https://github.com/leggedrobotics/legged_gym)   We borrowed the code organization and environment definition logic of legged_gym and simplified it as much as possible.
 * [Protomotions](https://github.com/NVlabs/ProtoMotions)   The motivation for building this repository comes from protomotions. For the first time, we realized that we could create our own environment using only IsaacLab components without inheriting 'DirectRLEnv' or 'ManagerBasedRLEnv'.
