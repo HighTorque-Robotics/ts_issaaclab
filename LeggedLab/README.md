@@ -52,7 +52,7 @@ git clone git@github.com:HighTorque-Robotics/ts_issaaclab.git
 - Using a python interpreter that has Isaac Lab installed, install the library
 
 ```bash
-cd ts/issaacliab/LeggedLab
+cd ts_issaacliab/LeggedLab
 pip install -e .
 ```
 
